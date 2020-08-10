@@ -1,36 +1,7 @@
+// This code adds basic routing functionality using vanilla Node.js
 
 const http = require('http');
-const url = require('url');
 
-
-// The blank lines below are left to follow along more easely with the course,
-// since the instructor has some commented out code in this area.
-// By keeping it, line numbers of the functional code match
-// on both these and the instructor's file.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////
-// SERVER
 const server = http.createServer((req, res) => {
     const pathName = req.url;
     
