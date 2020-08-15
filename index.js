@@ -1,5 +1,5 @@
 // Node Farm web application
-// Version 1.0.0
+// Version 1.1.0
 
 
 const fs              = require('fs');
@@ -15,6 +15,7 @@ const tempProduct = fs.readFileSync(`${__dirname}/templates/template-product.htm
 
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
 const dataObj = JSON.parse(data);
+
 // Callback function with the routing logic includes an api route to display json data.
 const server = http.createServer((req, res) => {    
     const { query, pathname } = url.parse(req.url, true);
