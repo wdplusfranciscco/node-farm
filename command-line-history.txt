@@ -1828,3 +1828,47 @@ To https://github.com/wdplusfranciscco/node-farm.git
    1ffb626..b2ae8d4  master -> master
 
 
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:48:02 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	command-line-history.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:50:09 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git add .
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:50:14 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	new file:   command-line-history.txt
+
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:50:19 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git commit -m "Remove git history record from .gitignore to allow commiting it to the project's repository."
+[master d1bef69] Remove git history record from .gitignore to allow commiting it to the project's repository.
+ 2 files changed, 1830 insertions(+), 1 deletion(-)
+ create mode 100644 command-line-history.txt
+
+
