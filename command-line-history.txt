@@ -1,0 +1,1830 @@
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:29:03 ]
+  > [ ~/pCloudSync/DevLearn ]
+  > $ git clone https://github.com/wdplusfranciscco/node-farm.git
+Cloning into 'node-farm'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 724 bytes | 5.00 KiB/s, done.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:31:37 ]
+  > [ ~/pCloudSync/DevLearn ]
+  > $ cd node-farm/
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:42:02 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ touch command-line-history.txt
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:52:07 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ ll
+total 8
+-rw-r--r--  1 Adventus01  staff   167B Aug  8 15:31 README.md
+-rw-r--r--  1 Adventus01  staff     0B Aug  8 15:48 command-line-history.txt
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:52:09 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ echo "command-line-history.txt" > .gitignore
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:52:22 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ cat .gitignore 
+command-line-history.txt
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:52:25 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ echo ".DS_Store" >> .gitignore
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:52:39 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ cat .gitignore 
+command-line-history.txt
+.DS_Store
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:52:42 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:56:40 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git add .gitignore
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:57:04 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git commit -m "Initial commit. Add .gitignore file"
+[master 437334a] Initial commit. Add .gitignore file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:57:29 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git log
+commit 437334a63faf27bf72cf447f5fef930e8a9439da (HEAD -> master)
+Author: wdplusfranciscco <wdplusfranciscco@gmail.com>
+Date:   Sat Aug 8 15:57:29 2020 -0500
+
+    Initial commit. Add .gitignore file
+
+commit 07d0d02b82f4682a29ce578154c27c8732014abf (origin/master, origin/HEAD)
+Author: wdplusfranciscco <34402880+wdplusfranciscco@users.noreply.github.com>
+Date:   Sat Aug 8 15:31:06 2020 -0500
+
+    Initial commit
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:57:45 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git lg
+* 437334a - (HEAD -> master) Initial commit. Add .gitignore file (22 seconds ago) <wdplusfranciscco>
+* 07d0d02 - (origin/master, origin/HEAD) Initial commit (27 minutes ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:57:51 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+   07d0d02..437334a  master -> master
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 15:59:39 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git branch develop
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 16:00:29 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git push -u origin develop
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/wdplusfranciscco/node-farm/pull/new/develop
+remote: 
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new branch]      develop -> develop
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 18:54:18 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git checkout -b lect008-reading-n-writing-files-sync
+Switched to a new branch 'lect008-reading-n-writing-files-sync'
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:13:55 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect008-reading-n-writing-files-sync) $ git status
+On branch lect008-reading-n-writing-files-sync
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lect008-reading-n-writing-files-sync.js
+	txt/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:14:10 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect008-reading-n-writing-files-sync) $ git add lect008-reading-n-writing-files-sync.js 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:15:05 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect008-reading-n-writing-files-sync) $ git add txt/
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:15:13 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect008-reading-n-writing-files-sync) $ git status
+On branch lect008-reading-n-writing-files-sync
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   lect008-reading-n-writing-files-sync.js
+	new file:   txt/input.txt
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:15:18 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect008-reading-n-writing-files-sync) $ git commit -m "Add demo code for sync file read/write operations. Add input.txt sample file for testing demo." 
+[lect008-reading-n-writing-files-sync 9621a91] Add demo code for sync file read/write operations. Add input.txt sample file for testing demo.
+ 2 files changed, 10 insertions(+)
+ create mode 100644 lect008-reading-n-writing-files-sync.js
+ create mode 100644 txt/input.txt
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:17:03 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect008-reading-n-writing-files-sync) $ git lg
+* 9621a91 - (HEAD -> lect008-reading-n-writing-files-sync) Add demo code for sync file read/write operations. Add input.txt sample file for testing demo. (8 seconds ago) <wdplusfranciscco>
+* 437334a - (origin/master, origin/develop, origin/HEAD, master, develop) Initial commit. Add .gitignore file (3 hours ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (4 hours ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:17:40 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect008-reading-n-writing-files-sync) $ tree
+.
+├── README.md
+├── command-line-history.txt
+├── lect008-reading-n-writing-files-sync.js
+└── txt
+    └── input.txt
+
+1 directory, 4 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:23:09 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect008-reading-n-writing-files-sync) $ git push --set-upstream origin lect008-reading-n-writing-files-sync 
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 783 bytes | 783.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'lect008-reading-n-writing-files-sync' on GitHub by visiting:
+remote:      https://github.com/wdplusfranciscco/node-farm/pull/new/lect008-reading-n-writing-files-sync
+remote: 
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new branch]      lect008-reading-n-writing-files-sync -> lect008-reading-n-writing-files-sync
+Branch 'lect008-reading-n-writing-files-sync' set up to track remote branch 'lect008-reading-n-writing-files-sync' from 'origin'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:27:52 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:49:54 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git checkout -b lect010-reading-n-writing-files-async
+Switched to a new branch 'lect010-reading-n-writing-files-async'
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:53:25 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect010-reading-n-writing-files-async) $ tree
+.
+├── README.md
+└── command-line-history.txt
+
+0 directories, 2 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 19:53:28 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect010-reading-n-writing-files-async) $ git status
+On branch lect010-reading-n-writing-files-async
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lect010-reading-n-writing-files-async.js
+	txt/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 20:24:53 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect010-reading-n-writing-files-async) $ git add lect010-reading-n-writing-files-async.js 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 20:25:01 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect010-reading-n-writing-files-async) $ git add txt/
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 20:25:06 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect010-reading-n-writing-files-async) $ git status
+On branch lect010-reading-n-writing-files-async
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   lect010-reading-n-writing-files-async.js
+	new file:   txt/append.txt
+	new file:   txt/input.txt
+	new file:   txt/read-this.txt
+	new file:   txt/start.txt
+
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 20:25:11 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect010-reading-n-writing-files-async) $ git commit -m "Add demo for async file read/write operations. Also add supporting txt files."
+[lect010-reading-n-writing-files-async efbc6d1] Add demo for async file read/write operations. Also add supporting txt files.
+ 5 files changed, 52 insertions(+)
+ create mode 100644 lect010-reading-n-writing-files-async.js
+ create mode 100644 txt/append.txt
+ create mode 100644 txt/input.txt
+ create mode 100644 txt/read-this.txt
+ create mode 100644 txt/start.txt
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 20:27:16 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect010-reading-n-writing-files-async) $ git push --set-upstream origin lect010-reading-n-writing-files-async
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.50 KiB | 1.50 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'lect010-reading-n-writing-files-async' on GitHub by visiting:
+remote:      https://github.com/wdplusfranciscco/node-farm/pull/new/lect010-reading-n-writing-files-async
+remote: 
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new branch]      lect010-reading-n-writing-files-async -> lect010-reading-n-writing-files-async
+Branch 'lect010-reading-n-writing-files-async' set up to track remote branch 'lect010-reading-n-writing-files-async' from 'origin'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 20:29:06 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect010-reading-n-writing-files-async) $ tree
+.
+├── README.md
+├── command-line-history.txt
+├── lect010-reading-n-writing-files-async.js
+└── txt
+    ├── append.txt
+    ├── input.txt
+    ├── read-this.txt
+    └── start.txt
+
+1 directory, 7 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 20:31:05 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect010-reading-n-writing-files-async) $ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 08 20:31:17 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ tree
+.
+├── README.md
+└── command-line-history.txt
+
+0 directories, 2 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 08:47:30 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 08:47:46 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git branch lect011-simple-web-server
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 09:14:53 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git branch
+* develop
+  lect008-reading-n-writing-files-sync
+  lect010-reading-n-writing-files-async
+  lect011-simple-web-server
+  master
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 09:14:58 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git checkout lect011-simple-web-server 
+Switched to branch 'lect011-simple-web-server'
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 09:15:10 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect011-simple-web-server) $ tree
+.
+├── README.md
+└── command-line-history.txt
+
+0 directories, 2 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 09:16:04 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect011-simple-web-server) $ git status
+On branch lect011-simple-web-server
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lect011-simple-web-server.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:31:49 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect011-simple-web-server) $ tree
+.
+├── README.md
+├── command-line-history.txt
+└── lect011-simple-web-server.js
+
+0 directories, 3 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:31:52 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect011-simple-web-server) $ git add lect011-simple-web-server.js 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:32:35 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect011-simple-web-server) $ git commit -m "Add JavaScript demo of a simple server."
+[lect011-simple-web-server 4543f5f] Add JavaScript demo of a simple server.
+ 1 file changed, 12 insertions(+)
+ create mode 100644 lect011-simple-web-server.js
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:33:16 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect011-simple-web-server) $ git push --set-upstream origin lect011-simple-web-server 
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 525 bytes | 525.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'lect011-simple-web-server' on GitHub by visiting
+remote:      https://github.com/wdplusfranciscco/node-farm/pull/new/lect011-simple-web-server
+remote: 
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new branch]      lect011-simple-web-server -> lect011-simple-web-server
+Branch 'lect011-simple-web-server' set up to track remote branch 'lect011-simple-web-server' from 'origin'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:34:27 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (lect011-simple-web-server) $ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:35:38 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ tree
+.
+├── README.md
+└── command-line-history.txt
+
+0 directories, 2 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:35:44 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ touch index.js
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:50:07 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git status
+On branch develop
+Your branch is up to date with 'origin/develop'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:50:12 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git add index.js 
+g
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:50:19 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git lg
+* 437334a - (HEAD -> develop, origin/master, origin/develop, origin/HEAD, master) Initial commit. Add .gitignore file (20 hours ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (20 hours ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:51:43 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git log
+commit 437334a63faf27bf72cf447f5fef930e8a9439da (HEAD -> develop, origin/master, origin/develop, origin/HEAD, master)
+Author: wdplusfranciscco <wdplusfranciscco@gmail.com>
+Date:   Sat Aug 8 15:57:29 2020 -0500
+
+    Initial commit. Add .gitignore file
+
+commit 07d0d02b82f4682a29ce578154c27c8732014abf
+Author: wdplusfranciscco <34402880+wdplusfranciscco@users.noreply.github.com>
+Date:   Sat Aug 8 15:31:06 2020 -0500
+
+    Initial commit
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:51:52 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git commit -m "Add empty index.js file to start the project. This is version 0.0.0."
+[develop 7297b8e] Add empty index.js file to start the project. This is version 0.0.0.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.js
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 11:53:34 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git tag v0.0.0 -a -m "Release version 0.0.0. Start initial development with an empty index.js file."
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 12:04:26 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git tag
+v0.0.0
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 12:04:44 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git tag -n
+v0.0.0          Release version 0.0.0. Start initial development with an empty index.js file.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 12:05:05 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git log
+commit 7297b8e8066f1832d770e11a4a1e1b414369f754 (HEAD -> develop, tag: v0.0.0)
+Author: wdplusfranciscco <wdplusfranciscco@gmail.com>
+Date:   Sun Aug 9 11:53:34 2020 -0500
+
+    Add empty index.js file to start the project. This is version 0.0.0.
+
+commit 437334a63faf27bf72cf447f5fef930e8a9439da (origin/master, origin/develop, origin/HEAD, master)
+Author: wdplusfranciscco <wdplusfranciscco@gmail.com>
+Date:   Sat Aug 8 15:57:29 2020 -0500
+
+    Initial commit. Add .gitignore file
+
+commit 07d0d02b82f4682a29ce578154c27c8732014abf
+Author: wdplusfranciscco <34402880+wdplusfranciscco@users.noreply.github.com>
+Date:   Sat Aug 8 15:31:06 2020 -0500
+
+    Initial commit
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 12:06:06 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git lg
+* 7297b8e - (HEAD -> develop, tag: v0.0.0) Add empty index.js file to start the project. This is version 0.0.0. (13 minutes ago) <wdplusfranciscco>
+* 437334a - (origin/master, origin/develop, origin/HEAD, master) Initial commit. Add .gitignore file (20 hours ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (21 hours ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 12:06:17 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git branch add-routing-basic-functionality
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 12:11:38 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git checkout add-routing-basic-functionality 
+Switched to branch 'add-routing-basic-functionality'
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 12:11:51 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-routing-basic-functionality) $ git branch
+* add-routing-basic-functionality
+  develop
+  lect008-reading-n-writing-files-sync
+  lect010-reading-n-writing-files-async
+  lect011-simple-web-server
+  master
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 12:11:56 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-routing-basic-functionality) $ git status
+On branch add-routing-basic-functionality
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 13:36:02 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-routing-basic-functionality) $ git add index.js 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 13:36:07 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-routing-basic-functionality) $ git commit -m "Create basic routing functionality in main.js"
+[add-routing-basic-functionality bd45cb5] Create basic routing functionality in main.js
+ 1 file changed, 52 insertions(+)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 13:36:38 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-routing-basic-functionality) $ git push -u origin add-routing-basic-functionality 
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.03 KiB | 351.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote: 
+remote: Create a pull request for 'add-routing-basic-functionality' on GitHub by visiting:
+remote:      https://github.com/wdplusfranciscco/node-farm/pull/new/add-routing-basic-functionality
+remote: 
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new branch]      add-routing-basic-functionality -> add-routing-basic-functionality
+Branch 'add-routing-basic-functionality' set up to track remote branch 'add-routing-basic-functionality' from 'origin'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 13:39:12 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-routing-basic-functionality) $ git add README.md 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 13:40:11 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-routing-basic-functionality) $ git commit -m "Edit typo in README.md."
+[add-routing-basic-functionality 09ef03c] Edit typo in README.md.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 13:40:17 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-routing-basic-functionality) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/wdplusfranciscco/node-farm.git
+   bd45cb5..09ef03c  add-routing-basic-functionality -> add-routing-basic-functionality
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 18:36:51 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git push origin v0.0.0
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 211 bytes | 211.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new tag]         v0.0.0 -> v0.0.0
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 18:37:43 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git pull origin develop
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+From https://github.com/wdplusfranciscco/node-farm
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 18:42:26 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git merge --no-ff add-routing-basic-functionality
+Merge made by the 'recursive' strategy.
+ README.md |  2 +-
+ index.js  | 52 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 53 insertions(+), 1 deletion(-)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 19:28:13 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git log
+commit 57ddc52b09fa13d6e13760e60f30ca352c81016e (HEAD -> develop)
+Merge: 7297b8e 09ef03c
+Author: wdplusfranciscco <wdplusfranciscco@gmail.com>
+Date:   Sun Aug 9 18:43:09 2020 -0500
+
+    Merge branch 'add-routing-basic-functionality' into develop
+    
+    This merge adds first actual functionality to the node-farm app and is then the initial development release candidate v0.1.0.
+
+commit 09ef03c9c8479e3f8fab9a94c54293c59a4bf37c (origin/add-routing-basic-functionality, add-routing-basic-functionality)
+Author: wdplusfranciscco <wdplusfranciscco@gmail.com>
+Date:   Sun Aug 9 13:40:17 2020 -0500
+
+    Edit typo in README.md.
+
+commit bd45cb59cfd8d5ea7f28cf17afd78b9d009744af
+Author: wdplusfranciscco <wdplusfranciscco@gmail.com>
+Date:   Sun Aug 9 13:36:38 2020 -0500
+
+    Create basic routing functionality in main.js
+
+commit 7297b8e8066f1832d770e11a4a1e1b414369f754 (tag: v0.0.0)
+Author: wdplusfranciscco <wdplusfranciscco@gmail.com>
+Date:   Sun Aug 9 11:53:34 2020 -0500
+
+    Add empty index.js file to start the project. This is version 0.0.0.
+
+commit 437334a63faf27bf72cf447f5fef930e8a9439da (origin/master, origin/develop, origin/HEAD, master)
+Author: wdplusfranciscco <wdplusfranciscco@gmail.com>
+Date:   Sat Aug 8 15:57:29 2020 -0500
+
+    Initial commit. Add .gitignore file
+
+commit 07d0d02b82f4682a29ce578154c27c8732014abf
+Author: wdplusfranciscco <34402880+wdplusfranciscco@users.noreply.github.com>
+Date:   Sat Aug 8 15:31:06 2020 -0500
+
+    Initial commit
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 19:29:06 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git checkout -b release-0.1.0 develop
+Switched to a new branch 'release-0.1.0'
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 19:32:15 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-0.1.0) $ git push -u origin release-0.1.0
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 321 bytes | 321.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'release-0.1.0' on GitHub by visiting:
+remote:      https://github.com/wdplusfranciscco/node-farm/pull/new/release-0.1.0
+remote: 
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new branch]      release-0.1.0 -> release-0.1.0
+Branch 'release-0.1.0' set up to track remote branch 'release-0.1.0' from 'origin'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 19:35:06 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-0.1.0) $ git push origin develop
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+   437334a..57ddc52  develop -> develop
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 19:37:03 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-0.1.0) $ git status
+On branch release-0.1.0
+Your branch is up to date with 'origin/release-0.1.0'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:11:23 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-0.1.0) $ git add index.js
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:11:54 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-0.1.0) $ git commit -m "Add comment explaining functionality added by this release. Remove unnecesary module url. Remove unnecessary white space. Ready to release by merging to both master and develop branches."
+[release-0.1.0 96263e8] Add comment explaining functionality added by this release. Remove unnecesary module url. Remove unnecessary white space. Ready to release by merging to both master and develop branches.
+ 1 file changed, 1 insertion(+), 30 deletions(-)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:11:59 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-0.1.0) $ git push origin
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 449 bytes | 449.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/wdplusfranciscco/node-farm.git
+   57ddc52..96263e8  release-0.1.0 -> release-0.1.0
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:13:33 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-0.1.0) $ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:13:49 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git merge --no-ff release-0.1.0 
+Merge made by the 'recursive' strategy.
+ README.md |  2 +-
+ index.js  | 23 +++++++++++++++++++++++
+ 2 files changed, 24 insertions(+), 1 deletion(-)
+ create mode 100644 index.js
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:19:03 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 279 bytes | 12.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+   437334a..1ffb626  master -> master
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:19:51 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:20:01 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git merge --no-ff release-0.1.0 
+Merge made by the 'recursive' strategy.
+ index.js | 31 +------------------------------
+ 1 file changed, 1 insertion(+), 30 deletions(-)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:20:36 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 243 bytes | 243.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+   57ddc52..6d78839  develop -> develop
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:26:24 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ $ git tag v0.1.0 -a -m "Release version 0.1.0. Start initial development with basic routing functionality on index.js file."
+-bash: $: command not found
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:28:05 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git tag v0.1.0 -a -m "Release version 0.1.0. Start initial development with basic routing functionality on index.js file."
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:28:18 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git tag -n
+v0.0.0          Release version 0.0.0. Start initial development with an empty index.js file.
+v0.1.0          Release version 0.1.0. Start initial development with basic routing functionality on index.js file.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:33:26 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git push origin v0.1.0
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 224 bytes | 224.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new tag]         v0.1.0 -> v0.1.0
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sun Aug 09 20:33:57 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git tag -n
+v0.0.0          Release version 0.0.0. Start initial development with an empty index.js file.
+v0.1.0          Release version 0.1.0. Start initial development with basic routing functionality on index.js file.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 11:34:09 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git checkout -b add-simple-api develop
+Switched to a new branch 'add-simple-api'
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 14:50:36 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git status
+On branch add-simple-api
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	dev-data/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 14:56:41 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git add dev-data/
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 14:56:50 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git commit -m "Add dev-data foler containing json data for products."
+[add-simple-api bacbef7] Add dev-data foler containing json data for products.
+ 1 file changed, 57 insertions(+)
+ create mode 100644 dev-data/data.json
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 14:58:30 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ tree
+.
+├── README.md
+├── command-line-history.txt
+├── dev-data
+│   └── data.json
+└── index.js
+
+1 directory, 4 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 20:52:21 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git lg
+* bacbef7 - (HEAD -> add-simple-api, origin/add-simple-api) Add dev-data foler containing json data for products. (6 hours ago) <wdplusfranciscco>
+*   6d78839 - (tag: v0.1.0, tag: v0.0.0, origin/develop, develop) Merge branch 'release-0.1.0' into develop. Release 0.1.0. (25 hours ago) <wdplusfranciscco>
+|\  
+| * 96263e8 - (origin/release-0.1.0, release-0.1.0) Add comment explaining functionality added by this release. Remove unnecesary module url. Remove unnecessary white space. Ready to release by merging to both master and develop branches. (25 hours ago) <wdplusfranciscco>
+|/  
+*   57ddc52 - Merge branch 'add-routing-basic-functionality' into develop (26 hours ago) <wdplusfranciscco>
+|\  
+| * 09ef03c - (origin/add-routing-basic-functionality, add-routing-basic-functionality) Edit typo in README.md. (31 hours ago) <wdplusfranciscco>
+| * bd45cb5 - Create basic routing functionality in main.js (31 hours ago) <wdplusfranciscco>
+|/  
+* 7297b8e - Add empty index.js file to start the project. This is version 0.0.0. (33 hours ago) <wdplusfranciscco>
+* 437334a - Initial commit. Add .gitignore file (2 days ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (2 days ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 20:54:24 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git status
+On branch add-simple-api
+Your branch is up to date with 'origin/add-simple-api'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 20:54:46 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git diff
+diff --git a/index.js b/index.js
+index b8e673a..c6ac509 100644
+--- a/index.js
++++ b/index.js
+@@ -1,7 +1,13 @@
+-// This code adds basic routing functionality using vanilla Node.js
++// This code adds an api route to the routing logic to retrieve product data in json format.
+ 
++const fs = require('fs');
+ const http = require('http');
+ 
++// Retrieve data during start and buffer it in the dataObj variable for further retrieval.
++const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
++const dataObj = JSON.parse(data);
++
++// Callback function with the routing logic includes an api route to display json data.
+ const server = http.createServer((req, res) => {
+     const pathName = req.url;
+     
+@@ -9,6 +15,9 @@ const server = http.createServer((req, res) => {
+         res.end('This is the OVERVIEW');
+     } else if (pathName === '/product') {
+         res.end('This is the PRODUCT');
++    } else if (pathName === '/api') {        
++        res.writeHead(200, { 'Content-type': 'application/json'});
++        res.end(data);
+     } else {
+         res.writeHead(404, {
+             'Content-type': 'text/html',
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 20:54:56 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git add index.js 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 20:55:02 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git commit -m "Add simple api functionality to the routing logic to allow retrieval of product data in JSON format."
+[add-simple-api c48ec6c] Add simple api functionality to the routing logic to allow retrieval of product data in JSON format.
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 20:55:56 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 876 bytes | 876.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/wdplusfranciscco/node-farm.git
+   bacbef7..c48ec6c  add-simple-api -> add-simple-api
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 20:56:18 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git lg
+* c48ec6c - (HEAD -> add-simple-api, origin/add-simple-api) Add simple api functionality to the routing logic to allow retrieval of product data in JSON format. (56 seconds ago) <wdplusfranciscco>
+* bacbef7 - Add dev-data foler containing json data for products. (6 hours ago) <wdplusfranciscco>
+*   6d78839 - (tag: v0.1.0, tag: v0.0.0, origin/develop, develop) Merge branch 'release-0.1.0' into develop. Release 0.1.0. (25 hours ago) <wdplusfranciscco>
+|\  
+| * 96263e8 - (origin/release-0.1.0, release-0.1.0) Add comment explaining functionality added by this release. Remove unnecesary module url. Remove unnecessary white space. Ready to release by merging to both master and develop branches. (25 hours ago) <wdplusfranciscco>
+|/  
+*   57ddc52 - Merge branch 'add-routing-basic-functionality' into develop (26 hours ago) <wdplusfranciscco>
+|\  
+| * 09ef03c - (origin/add-routing-basic-functionality, add-routing-basic-functionality) Edit typo in README.md. (31 hours ago) <wdplusfranciscco>
+| * bd45cb5 - Create basic routing functionality in main.js (31 hours ago) <wdplusfranciscco>
+|/  
+* 7297b8e - Add empty index.js file to start the project. This is version 0.0.0. (33 hours ago) <wdplusfranciscco>
+* 437334a - Initial commit. Add .gitignore file (2 days ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (2 days ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 21:05:24 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-simple-api) $ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 21:05:39 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git merge --no-ff add-simple-api
+Merge made by the 'recursive' strategy.
+ dev-data/data.json | 57 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ index.js           | 11 ++++++++++-
+ 2 files changed, 67 insertions(+), 1 deletion(-)
+ create mode 100644 dev-data/data.json
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 21:06:02 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 234 bytes | 234.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+   6d78839..5bd5789  develop -> develop
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 21:06:24 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git lg
+*   5bd5789 - (HEAD -> develop, origin/develop) Merge branch 'add-simple-api' into develop (6 minutes ago) <wdplusfranciscco>
+|\  
+| * c48ec6c - (origin/add-simple-api, add-simple-api) Add simple api functionality to the routing logic to allow retrieval of product data in JSON format. (15 minutes ago) <wdplusfranciscco>
+| * bacbef7 - Add dev-data foler containing json data for products. (6 hours ago) <wdplusfranciscco>
+|/  
+*   6d78839 - (tag: v0.1.0, tag: v0.0.0) Merge branch 'release-0.1.0' into develop. Release 0.1.0. (25 hours ago) <wdplusfranciscco>
+|\  
+| * 96263e8 - (origin/release-0.1.0, release-0.1.0) Add comment explaining functionality added by this release. Remove unnecesary module url. Remove unnecessary white space. Ready to release by merging to both master and develop branches. (25 hours ago) <wdplusfranciscco>
+|/  
+*   57ddc52 - Merge branch 'add-routing-basic-functionality' into develop (26 hours ago) <wdplusfranciscco>
+|\  
+| * 09ef03c - (origin/add-routing-basic-functionality, add-routing-basic-functionality) Edit typo in README.md. (32 hours ago) <wdplusfranciscco>
+| * bd45cb5 - Create basic routing functionality in main.js (32 hours ago) <wdplusfranciscco>
+|/  
+* 7297b8e - Add empty index.js file to start the project. This is version 0.0.0. (33 hours ago) <wdplusfranciscco>
+* 437334a - Initial commit. Add .gitignore file (2 days ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (2 days ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Mon Aug 10 21:11:17 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git branch
+  add-routing-basic-functionality
+  add-simple-api
+* develop
+  lect008-reading-n-writing-files-sync
+  lect010-reading-n-writing-files-async
+  lect011-simple-web-server
+  master
+  release-0.1.0
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 19:53:53 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git branch add-html develop
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 19:54:41 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git branch
+  add-html
+  add-routing-basic-functionality
+  add-simple-api
+* develop
+  lect008-reading-n-writing-files-sync
+  lect010-reading-n-writing-files-async
+  lect011-simple-web-server
+  master
+  release-0.1.0
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 19:54:44 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git checkout add-html
+Switched to branch 'add-html'
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 19:57:01 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git push -u origin add-html
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'add-html' on GitHub by visiting:
+remote:      https://github.com/wdplusfranciscco/node-farm/pull/new/add-html
+remote: 
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new branch]      add-html -> add-html
+Branch 'add-html' set up to track remote branch 'add-html' from 'origin'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 19:57:25 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git status
+On branch add-html
+Your branch is up to date with 'origin/add-html'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	templates/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 20:00:32 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ tree
+.
+├── README.md
+├── command-line-history.txt
+├── dev-data
+│   └── data.json
+├── index.js
+└── templates
+    ├── overview.html
+    └── product.html
+
+2 directories, 6 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 20:00:38 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git add templates/
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 20:00:44 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git commit -m "Add html templates."
+[add-html 0bcf015] Add html templates.
+ 2 files changed, 631 insertions(+)
+ create mode 100644 templates/overview.html
+ create mode 100644 templates/product.html
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 20:01:21 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 4.16 KiB | 4.16 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/wdplusfranciscco/node-farm.git
+   5bd5789..0bcf015  add-html -> add-html
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 20:01:57 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git lg
+* 0bcf015 - (HEAD -> add-html, origin/add-html) Add html templates. (41 seconds ago) <wdplusfranciscco>
+*   5bd5789 - (origin/develop, develop) Merge branch 'add-simple-api' into develop (23 hours ago) <wdplusfranciscco>
+|\  
+| * c48ec6c - (origin/add-simple-api, add-simple-api) Add simple api functionality to the routing logic to allow retrieval of product data in JSON format. (23 hours ago) <wdplusfranciscco>
+| * bacbef7 - Add dev-data foler containing json data for products. (29 hours ago) <wdplusfranciscco>
+|/  
+*   6d78839 - (tag: v0.1.0, tag: v0.0.0) Merge branch 'release-0.1.0' into develop. Release 0.1.0. (2 days ago) <wdplusfranciscco>
+|\  
+| * 96263e8 - (origin/release-0.1.0, release-0.1.0) Add comment explaining functionality added by this release. Remove unnecesary module url. Remove unnecessary white space. Ready to release by merging to both master and develop branches. (2 days ago) <wdplusfranciscco>
+|/  
+*   57ddc52 - Merge branch 'add-routing-basic-functionality' into develop (2 days ago) <wdplusfranciscco>
+|\  
+| * 09ef03c - (origin/add-routing-basic-functionality, add-routing-basic-functionality) Edit typo in README.md. (2 days ago) <wdplusfranciscco>
+| * bd45cb5 - Create basic routing functionality in main.js (2 days ago) <wdplusfranciscco>
+|/  
+* 7297b8e - Add empty index.js file to start the project. This is version 0.0.0. (2 days ago) <wdplusfranciscco>
+* 437334a - Initial commit. Add .gitignore file (3 days ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (3 days ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 20:02:01 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git status
+On branch add-html
+Your branch is up to date with 'origin/add-html'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    templates/overview.html
+	deleted:    templates/product.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	templates/template-card.html
+	templates/template-overview.html
+	templates/template-product.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 20:37:18 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git add .
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 20:37:35 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git status
+On branch add-html
+Your branch is up to date with 'origin/add-html'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   templates/template-card.html
+	renamed:    templates/overview.html -> templates/template-overview.html
+	renamed:    templates/product.html -> templates/template-product.html
+
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 20:37:47 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git commit -m "Rename overview and product templates. Add card template. Edit templates to set placeholders for dynamic data."
+[add-html 455df4b] Rename overview and product templates. Add card template. Edit templates to set placeholders for dynamic data.
+ 3 files changed, 39 insertions(+), 143 deletions(-)
+ create mode 100644 templates/template-card.html
+ rename templates/{overview.html => template-overview.html} (54%)
+ rename templates/{product.html => template-product.html} (78%)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Tue Aug 11 20:38:57 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 3.92 KiB | 3.92 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/wdplusfranciscco/node-farm.git
+   0bcf015..455df4b  add-html -> add-html
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:10:32 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ tree
+.
+├── README.md
+├── command-line-history.txt
+├── dev-data
+│   └── data.json
+├── index.js
+└── templates
+    ├── template-card.html
+    ├── template-overview.html
+    └── template-product.html
+
+2 directories, 7 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:11:19 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git lg
+* 455df4b - (HEAD -> add-html, origin/add-html) Rename overview and product templates. Add card template. Edit templates to set placeholders for dynamic data. (3 days ago) <wdplusfranciscco>
+* 0bcf015 - Add html templates. (3 days ago) <wdplusfranciscco>
+*   5bd5789 - (origin/develop, develop) Merge branch 'add-simple-api' into develop (4 days ago) <wdplusfranciscco>
+|\  
+| * c48ec6c - (origin/add-simple-api, add-simple-api) Add simple api functionality to the routing logic to allow retrieval of product data in JSON format. (4 days ago) <wdplusfranciscco>
+| * bacbef7 - Add dev-data foler containing json data for products. (4 days ago) <wdplusfranciscco>
+|/  
+*   6d78839 - (tag: v0.1.0, tag: v0.0.0) Merge branch 'release-0.1.0' into develop. Release 0.1.0. (5 days ago) <wdplusfranciscco>
+|\  
+| * 96263e8 - (origin/release-0.1.0, release-0.1.0) Add comment explaining functionality added by this release. Remove unnecesary module url. Remove unnecessary white space. Ready to release by merging to both master and develop branches. (5 days ago) <wdplusfranciscco>
+|/  
+*   57ddc52 - Merge branch 'add-routing-basic-functionality' into develop (5 days ago) <wdplusfranciscco>
+|\  
+| * 09ef03c - (origin/add-routing-basic-functionality, add-routing-basic-functionality) Edit typo in README.md. (5 days ago) <wdplusfranciscco>
+| * bd45cb5 - Create basic routing functionality in main.js (5 days ago) <wdplusfranciscco>
+|/  
+* 7297b8e - Add empty index.js file to start the project. This is version 0.0.0. (5 days ago) <wdplusfranciscco>
+* 437334a - Initial commit. Add .gitignore file (6 days ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (6 days ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:11:31 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git status
+On branch add-html
+Your branch is up to date with 'origin/add-html'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.js
+	modified:   templates/template-card.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:11:54 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git add index.js 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:12:18 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git add templates/template-card.html 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:12:49 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git status
+On branch add-html
+Your branch is up to date with 'origin/add-html'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.js
+	modified:   templates/template-card.html
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:15:32 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git commit -m "Add search and replace functionality to add templatecards data.
+continue > Complete functionality to overview page."
+[add-html f40e388] Add search and replace functionality to add templatecards data. Complete functionality to overview page.
+ 2 files changed, 67 insertions(+), 7 deletions(-)
+
+  
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:16:24 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-html) $ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:16:55 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git merge --no-ff add-html develop
+Merge made by the 'recursive' strategy.
+ index.js                         |  64 ++++++++-
+ templates/template-card.html     |  24 ++++
+ templates/template-overview.html | 199 ++++++++++++++++++++++++++++
+ templates/template-product.html  | 308 +++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 591 insertions(+), 4 deletions(-)
+ create mode 100644 templates/template-card.html
+ create mode 100644 templates/template-overview.html
+ create mode 100644 templates/template-product.html
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:17:29 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git lg
+*   3009f10 - (HEAD -> develop) Merge branch 'add-html' into develop (25 seconds ago) <wdplusfranciscco>
+|\  
+| * f40e388 - (add-html) Add search and replace functionality to add templatecards data. Complete functionality to overview page. (83 seconds ago) <wdplusfranciscco>
+| * 455df4b - (origin/add-html) Rename overview and product templates. Add card template. Edit templates to set placeholders for dynamic data. (3 days ago) <wdplusfranciscco>
+| * 0bcf015 - Add html templates. (3 days ago) <wdplusfranciscco>
+|/  
+*   5bd5789 - (origin/develop) Merge branch 'add-simple-api' into develop (4 days ago) <wdplusfranciscco>
+|\  
+| * c48ec6c - (origin/add-simple-api, add-simple-api) Add simple api functionality to the routing logic to allow retrieval of product data in JSON format. (4 days ago) <wdplusfranciscco>
+| * bacbef7 - Add dev-data foler containing json data for products. (4 days ago) <wdplusfranciscco>
+|/  
+*   6d78839 - (tag: v0.1.0, tag: v0.0.0) Merge branch 'release-0.1.0' into develop. Release 0.1.0. (5 days ago) <wdplusfranciscco>
+|\  
+| * 96263e8 - (origin/release-0.1.0, release-0.1.0) Add comment explaining functionality added by this release. Remove unnecesary module url. Remove unnecessary white space. Ready to release by merging to both master and develop branches. (5 days ago) <wdplusfranciscco>
+|/  
+*   57ddc52 - Merge branch 'add-routing-basic-functionality' into develop (5 days ago) <wdplusfranciscco>
+|\  
+| * 09ef03c - (origin/add-routing-basic-functionality, add-routing-basic-functionality) Edit typo in README.md. (5 days ago) <wdplusfranciscco>
+| * bd45cb5 - Create basic routing functionality in main.js (5 days ago) <wdplusfranciscco>
+|/  
+* 7297b8e - Add empty index.js file to start the project. This is version 0.0.0. (5 days ago) <wdplusfranciscco>
+* 437334a - Initial commit. Add .gitignore file (6 days ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (6 days ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:17:37 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ tree
+.
+├── README.md
+├── command-line-history.txt
+├── dev-data
+│   └── data.json
+├── index.js
+└── templates
+    ├── template-card.html
+    ├── template-overview.html
+    └── template-product.html
+
+2 directories, 7 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:21:27 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git branch parse-urls
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:24:20 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git checkout parse-urls 
+Switched to branch 'parse-urls'
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:24:30 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (parse-urls) $ tree
+.
+├── README.md
+├── command-line-history.txt
+├── dev-data
+│   └── data.json
+├── index.js
+└── templates
+    ├── template-card.html
+    ├── template-overview.html
+    └── template-product.html
+
+2 directories, 7 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 19:24:38 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (parse-urls) $ git status
+On branch parse-urls
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.js
+	modified:   templates/template-product.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:15:50 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (parse-urls) $ git add index.js 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:15:58 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (parse-urls) $ git add templates/template-product.html 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:16:08 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (parse-urls) $ git status
+On branch parse-urls
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.js
+	modified:   templates/template-product.html
+
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:16:11 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (parse-urls) $ git commit -m "Complete parsing of urls and the routing functionality to all pages. First working version for public release. This is release candidate for version 1.0.0."
+[parse-urls d88fa7e] Complete parsing of urls and the routing functionality to all pages. First working version for public release. This is release candidate for version 1.0.0.
+ 2 files changed, 11 insertions(+), 9 deletions(-)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:19:13 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (parse-urls) $ git push -u origin parse-urls 
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 18, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 2.21 KiB | 2.21 MiB/s, done.
+Total 11 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), completed with 4 local objects.
+remote: 
+remote: Create a pull request for 'parse-urls' on GitHub by visiting:
+remote:      https://github.com/wdplusfranciscco/node-farm/pull/new/parse-urls
+remote: 
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new branch]      parse-urls -> parse-urls
+Branch 'parse-urls' set up to track remote branch 'parse-urls' from 'origin'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:20:03 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (parse-urls) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Everything up-to-date
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:20:19 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (parse-urls) $ git checkout develop
+Switched to branch 'develop'
+Your branch is ahead of 'origin/develop' by 4 commits.
+  (use "git push" to publish your local commits)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:22:00 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git merge --no-ff parse-urls develop
+Merge made by the 'recursive' strategy.
+ index.js                        | 18 ++++++++++--------
+ templates/template-product.html |  2 +-
+ 2 files changed, 11 insertions(+), 9 deletions(-)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:24:24 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git lg
+*   8450db0 - (HEAD -> develop) Merge branch 'parse-urls' into develop First fully working version of the Node Farm application. This is ready to become release candidate for version 1.0.0. (2 minutes ago) <wdplusfranciscco>
+|\  
+| * d88fa7e - (origin/parse-urls, parse-urls) Complete parsing of urls and the routing functionality to all pages. First working version for public release. This is release candidate for version 1.0.0. (5 minutes ago) <wdplusfranciscco>
+|/  
+*   3009f10 - Merge branch 'add-html' into develop (67 minutes ago) <wdplusfranciscco>
+|\  
+| * f40e388 - (add-html) Add search and replace functionality to add templatecards data. Complete functionality to overview page. (68 minutes ago) <wdplusfranciscco>
+| * 455df4b - (origin/add-html) Rename overview and product templates. Add card template. Edit templates to set placeholders for dynamic data. (3 days ago) <wdplusfranciscco>
+| * 0bcf015 - Add html templates. (3 days ago) <wdplusfranciscco>
+|/  
+*   5bd5789 - (origin/develop) Merge branch 'add-simple-api' into develop (4 days ago) <wdplusfranciscco>
+|\  
+| * c48ec6c - (origin/add-simple-api, add-simple-api) Add simple api functionality to the routing logic to allow retrieval of product data in JSON format. (4 days ago) <wdplusfranciscco>
+| * bacbef7 - Add dev-data foler containing json data for products. (4 days ago) <wdplusfranciscco>
+|/  
+*   6d78839 - (tag: v0.1.0, tag: v0.0.0) Merge branch 'release-0.1.0' into develop. Release 0.1.0. (5 days ago) <wdplusfranciscco>
+|\  
+| * 96263e8 - (origin/release-0.1.0, release-0.1.0) Add comment explaining functionality added by this release. Remove unnecesary module url. Remove unnecessary white space. Ready to release by merging to both master and develop branches. (5 days ago) <wdplusfranciscco>
+|/  
+*   57ddc52 - Merge branch 'add-routing-basic-functionality' into develop (5 days ago) <wdplusfranciscco>
+|\  
+| * 09ef03c - (origin/add-routing-basic-functionality, add-routing-basic-functionality) Edit typo in README.md. (5 days ago) <wdplusfranciscco>
+| * bd45cb5 - Create basic routing functionality in main.js (5 days ago) <wdplusfranciscco>
+|/  
+* 7297b8e - Add empty index.js file to start the project. This is version 0.0.0. (5 days ago) <wdplusfranciscco>
+* 437334a - Initial commit. Add .gitignore file (6 days ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (6 days ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:24:41 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git tag v1.0.0-rc-0 -a -m "Release candidate version 1.0.0-rc-0. Candidate for public release of first fully functional version of the Node Farm web application."
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:31:41 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 311 bytes | 23.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+   5bd5789..8450db0  develop -> develop
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:32:00 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git push origin v1.0.0-rc-0
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 240 bytes | 240.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new tag]         v1.0.0-rc-0 -> v1.0.0-rc-0
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:32:36 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git branch release-1.0.0-rc-0
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:34:54 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (develop) $ git checkout release-1.0.0-rc-0 
+Switched to branch 'release-1.0.0-rc-0'
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:35:06 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-1.0.0-rc-0) $ git status
+On branch release-1.0.0-rc-0
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:36:52 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-1.0.0-rc-0) $ git add index.js 
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:36:57 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-1.0.0-rc-0) $ git commit -m "Cleanup of index.js file. Application ready for release. This can be merged into master and become version 1.0.0."
+[release-1.0.0-rc-0 ad7f1e6] Cleanup of index.js file. Application ready for release. This can be merged into master and become version 1.0.0.
+ 1 file changed, 2 insertions(+), 26 deletions(-)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:38:23 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-1.0.0-rc-0) $ git push -u origin release-1.0.0-rc-0
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 402 bytes | 402.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'release-1.0.0-rc-0' on GitHub by visiting:
+remote:      https://github.com/wdplusfranciscco/node-farm/pull/new/release-1.0.0-rc-0
+remote: 
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new branch]      release-1.0.0-rc-0 -> release-1.0.0-rc-0
+Branch 'release-1.0.0-rc-0' set up to track remote branch 'release-1.0.0-rc-0' from 'origin'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:39:11 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-1.0.0-rc-0) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Everything up-to-date
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:39:35 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (release-1.0.0-rc-0) $ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:39:48 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git merge --no-ff release-1.0.0-rc-0
+Merge made by the 'recursive' strategy.
+ dev-data/data.json               |  57 ++++++++
+ index.js                         |  57 +++++++-
+ templates/template-card.html     |  24 ++++
+ templates/template-overview.html | 199 ++++++++++++++++++++++++++++
+ templates/template-product.html  | 308 +++++++++++++++++++++++++++++++++++++++++++
+ 5 files changed, 638 insertions(+), 7 deletions(-)
+ create mode 100644 dev-data/data.json
+ create mode 100644 templates/template-card.html
+ create mode 100644 templates/template-overview.html
+ create mode 100644 templates/template-product.html
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:41:52 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ tree
+.
+├── README.md
+├── command-line-history.txt
+├── dev-data
+│   └── data.json
+├── index.js
+└── templates
+    ├── template-card.html
+    ├── template-overview.html
+    └── template-product.html
+
+2 directories, 7 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:43:16 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git tag v1.0.0 -a -m "Release version 1.0.0. First fully functional version of the Node Farm web application for public use."
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:44:34 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git push origin v1.0.0
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 2, done.
+Counting objects: 100% (2/2), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 492 bytes | 492.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+ * [new tag]         v1.0.0 -> v1.0.0
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:45:18 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git lg
+*   b2ae8d4 - (HEAD -> master, tag: v1.0.0) Merge branch 'release-1.0.0-rc-0' This is the public release of version 1.0.0. First fully working version of the Node Farm web application. (5 minutes ago) <wdplusfranciscco>
+|\  
+| * ad7f1e6 - (origin/release-1.0.0-rc-0, release-1.0.0-rc-0) Cleanup of index.js file. Application ready for release. This can be merged into master and become version 1.0.0. (7 minutes ago) <wdplusfranciscco>
+| *   8450db0 - (tag: v1.0.0-rc-0, origin/develop, develop) Merge branch 'parse-urls' into develop First fully working version of the Node Farm application. This is ready to become release candidate for version 1.0.0. (23 minutes ago) <wdplusfranciscco>
+| |\  
+| | * d88fa7e - (origin/parse-urls, parse-urls) Complete parsing of urls and the routing functionality to all pages. First working version for public release. This is release candidate for version 1.0.0. (26 minutes ago) <wdplusfranciscco>
+| |/  
+| *   3009f10 - Merge branch 'add-html' into develop (88 minutes ago) <wdplusfranciscco>
+| |\  
+| | * f40e388 - (add-html) Add search and replace functionality to add templatecards data. Complete functionality to overview page. (89 minutes ago) <wdplusfranciscco>
+| | * 455df4b - (origin/add-html) Rename overview and product templates. Add card template. Edit templates to set placeholders for dynamic data. (3 days ago) <wdplusfranciscco>
+| | * 0bcf015 - Add html templates. (3 days ago) <wdplusfranciscco>
+| |/  
+| *   5bd5789 - Merge branch 'add-simple-api' into develop (4 days ago) <wdplusfranciscco>
+| |\  
+| | * c48ec6c - (origin/add-simple-api, add-simple-api) Add simple api functionality to the routing logic to allow retrieval of product data in JSON format. (4 days ago) <wdplusfranciscco>
+| | * bacbef7 - Add dev-data foler containing json data for products. (4 days ago) <wdplusfranciscco>
+| |/  
+| *   6d78839 - (tag: v0.1.0, tag: v0.0.0) Merge branch 'release-0.1.0' into develop. Release 0.1.0. (5 days ago) <wdplusfranciscco>
+| |\  
+* | \   1ffb626 - (origin/master, origin/HEAD) Merge branch 'release-0.1.0'. This merge formally starts the development phase. This is release version 0.1.0. (5 days ago) <wdplusfranciscco>
+|\ \ \  
+| | |/  
+| |/|   
+| * | 96263e8 - (origin/release-0.1.0, release-0.1.0) Add comment explaining functionality added by this release. Remove unnecesary module url. Remove unnecessary white space. Ready to release by merging to both master and develop branches. (5 days ago) <wdplusfranciscco>
+| |/  
+| *   57ddc52 - Merge branch 'add-routing-basic-functionality' into develop (5 days ago) <wdplusfranciscco>
+| |\  
+| | * 09ef03c - (origin/add-routing-basic-functionality, add-routing-basic-functionality) Edit typo in README.md. (5 days ago) <wdplusfranciscco>
+| | * bd45cb5 - Create basic routing functionality in main.js (5 days ago) <wdplusfranciscco>
+| |/  
+| * 7297b8e - Add empty index.js file to start the project. This is version 0.0.0. (5 days ago) <wdplusfranciscco>
+|/  
+* 437334a - Initial commit. Add .gitignore file (6 days ago) <wdplusfranciscco>
+* 07d0d02 - Initial commit (6 days ago) <wdplusfranciscco>
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:45:56 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/wdplusfranciscco/node-farm.git
+   1ffb626..b2ae8d4  master -> master
+
+
