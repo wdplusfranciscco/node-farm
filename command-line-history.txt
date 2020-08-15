@@ -1872,3 +1872,106 @@ Changes to be committed:
  create mode 100644 command-line-history.txt
 
 
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:51:29 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git add .
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:52:14 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   command-line-history.txt
+
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:52:19 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git commit -m "Add final version of git history record to the project."
+[master 03a6eed] Add final version of git history record to the project.
+ 1 file changed, 44 insertions(+)
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:52:56 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git push
+Username for 'https://github.com': wdplusfranciscco
+Password for 'https://wdplusfranciscco@github.com': 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 8.81 KiB | 4.41 MiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/wdplusfranciscco/node-farm.git
+   b2ae8d4..03a6eed  master -> master
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 20:53:19 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ tree
+.
+├── README.md
+├── command-line-history.txt
+├── dev-data
+│   └── data.json
+├── index.js
+└── templates
+    ├── template-card.html
+    ├── template-overview.html
+    └── template-product.html
+
+2 directories, 7 files
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Fri Aug 14 21:07:08 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git branch add-replacetemplate-module
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 15 08:34:00 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git branch
+  add-html
+  add-replacetemplate-module
+  add-routing-basic-functionality
+  add-simple-api
+  develop
+  lect008-reading-n-writing-files-sync
+  lect010-reading-n-writing-files-async
+  lect011-simple-web-server
+* master
+  parse-urls
+  release-0.1.0
+  release-1.0.0-rc-0
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 15 08:34:05 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (master) $ git checkout add-replacetemplate-module 
+Switched to branch 'add-replacetemplate-module'
+
+
+  > [ iMac/Users/Adventus01/ ]  [ Sat Aug 15 08:34:23 ]
+  > [ ~/pCloudSync/DevLearn/node-farm ]
+  > (add-replacetemplate-module) $ tree
+.
+├── README.md
+├── command-line-history.txt
+├── dev-data
+│   └── data.json
+├── index.js
+└── templates
+    ├── template-card.html
+    ├── template-overview.html
+    └── template-product.html
+
+2 directories, 7 files
+
+
