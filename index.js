@@ -1,34 +1,10 @@
-// This code adds an api route to the routing logic to retrieve product data in json format.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Node Farm web application
+// Version 1.0.0
 
 
 const fs = require('fs');
 const http = require('http');
 const url = require('url');
-
 
 
 const replaceTemplate = (temp, product) => {
